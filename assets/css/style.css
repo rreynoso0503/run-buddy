@@ -378,3 +378,21 @@ header {
   }
   
   /* REACH OUT STYLES END */
+
+
+
+
+  
+ /* secondary page hero */
+.hero-secondary {
+    margin: 20px;
+    background-color: black;
+    font-size: 20px;
+    color: red;
+  }
+
+  /* these two colors will override the ones above in .hero */
+.hero-secondary {
+    background-color: black;
+    color: red;
+  }

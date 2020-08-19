@@ -1,0 +1,18 @@
+.hero {
+    background-position: bottom;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  header {
+    color: #fce138;
+
+  }
+  h2 {
+      display: inline-block;
+      border-bottom: 4px 
+      width: solid;
+      color: #fce138;
+      border: 0 80px 15px 80px;
+  }
