@@ -11,6 +11,12 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
   }
 
   header h1 {
@@ -122,10 +128,11 @@ header {
   .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-attachment: fixed;
   } 
 
   .hero-form {
@@ -134,6 +141,7 @@ header {
     width: 40%;
     margin: 3.5%
     color: #024e76;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .hero-form {
@@ -172,7 +180,7 @@ header {
     width: 40%;
     margin: 3.5%;
     color: #024e76;
-    
+    border-radius: 15px;
   }
 
   .hero-form h3 {
@@ -337,7 +345,7 @@ header {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -650,6 +658,58 @@ header {
   grid-row: -1;
 }
 
+.some-class {
+  text-shadow: 5px 10px 15px black;
+  box-shadow: 5px 10px 15px black;
+}
+.some-class {
+  text-shadow: 5px 10px 15px black;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+header h1 {
+  /* add alongside your existing declarations */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a {
+  /* and here */
+}
+
+.hero-cta h2 {
+  /* and here */
+}
+
+.hero-form {
+  background-color: #fce138;
+}
+
+.form-input {
+
+}
+
+.hero-form button {
+
+}
+
+.contact-form input, .contact-form textarea {
+
+}
+
+.contact-form button {
+
+}
+
+
+.step:last-child {
+  border-bottom: 1px solid #39a6b2;
+}
+
+
+
 
 
 
@@ -711,6 +771,111 @@ header {
 .contact-info iframe{
   flex: 1 100%;
 }
+
+.rounded-corners {
+  -webkit-border-radius: 10px; /* old versions of chrome and safari */
+  -moz-border-radius: 10px; /* old versions of firefox */
+  border-radius: 10px; /* standardized browsers */
+}
+
+/* default state */
+button {
+  background: white;
+}
+
+/* mouse is hovering over button */
+button:hover {
+  background: red;
+}
+
+/* button is in focus because it was the most recently clicked element on the page */
+button:focus {
+  background: green;
+}
+
+/* user is actively pressing the cursor down on the button */
+button:active {
+  background: blue;
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
+/* update existing rule with this declaration */
+.form-input {
+  background-color: rgba(255,255,255, 0.75);
+}
+
+/* create a new rule for focus state */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+}
+
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.contact-form input, .contact-form textarea {
+  /* add a transparent background here */
+}
+
+/* create a new css rule for focus state */
+.contact-form input:focus, .contact-form textarea:focus {
+
+}
+
+
+
+.step:last-child {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+.step {
+  /* re-add alongside existing declarations */
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   section {
