@@ -372,10 +372,7 @@ header {
     
   }
 
-  .trainer img {
-    width: 100%;
-    
-  }
+
   
   .trainer-bio {
     padding: 25px;
@@ -726,30 +723,100 @@ div {
   --secondary-color: #024e76;
   --tertiary-color: #39a6b2;
 }
+div {
+  animation-name: fade-in;
+  animation-duration: 1s; /* animation lasts 1 second */
+}
+div {
+  animation: fade-in 1s; /* shorthand version */
+  animation-iteration-count: infinite;
+}
+div:hover {
+  animation: fade-in 1s infinite; /* more shorthand version */
+}
+div {
+  font-size: 20px;
+}
 
+div:hover {
+  font-size: 200px;
+}
 
+div {
+  font-size: 20px;
+  transition-property: font-size;
+  transition-duration: 2s;
 
+  /* or shorthand */
+  transition: font-size 2s;
+}
 
+div:hover {
+  font-size: 200px;
+}
 
+div {
+  color: purple;
+  font-size: 20px;
+  transition-duration: 2s; /* will apply to both color and font-size */
+}
 
+div:hover {
+  color: black;
+  font-size: 200px;
+}
 
+.trainer-1 {
+  background-image: url("<insert-correct-path-here>/trainer-1.jpg");
+}
 
+.trainer-img {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  padding: 15px;
+  align-items: ???;
+}
 
+.trainer-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(252, 225, 56, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
+.trainer-img h3 {
+  position: relative;
+  z-index: ???;
+}
 
+.trainer-img h4 {
+  position: relative;
+  z-index: ???;
+}
 
+div span {
+  color: blue;
+}
 
+div:hover span {
+  color: red;
+}
 
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
 
+}
 
+.trainer-img h3 {
 
+}
 
+.trainer-img h4 {
 
-
-
-
-
-
+}
 
 
 
@@ -1057,5 +1124,18 @@ header nav ul li a:hover {
     writing-mode: unset;
     grid-column: 1 / -1;
     grid-row: -1;
+  }
+}
+@keyframes color-shift {
+  from {
+    background-color: red;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  to {
+    background-color: green;
   }
 }
